@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -35,8 +35,9 @@
             left: 0;
             width: 100%;
             height: 65px;
-            color: #000000;
+            background-color: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(20px);
+            z-index: 1000;
         }
 
         .header__flex ul {
@@ -49,21 +50,28 @@
 
         a {
             text-decoration: none;
-            color: #000000;
+            color: #000;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #555;
         }
 
         .Logo-text {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: calc(100vh - 60px - 150px);
+            height: calc(100vh - 65px - 120px);
             text-align: center;
             font-weight: 600;
+            padding-top: 65px;
         }
 
         .font-txt {
             font-family: "Josefin Sans", sans-serif;
-            font-size: 100px;
+            font-size: 8vw;
+            line-height: 1.2;
         }
 
         .buttongroup {
@@ -79,28 +87,29 @@
             text-decoration: none;
             margin: 10px;
             display: inline-block;
+            transition: all 0.3s;
         }
 
         .buttongroup .button02 {
-            background-color: #000000;
-            border: solid 2px #000000;
-            color: #ffffff;
+            background-color: #000;
+            border: solid 2px #000;
+            color: #fff;
         }
 
         .buttongroup .button02:hover {
-            background-color: #333333;
+            background-color: #333;
         }
 
         .buttongroup .button03 {
-            background-color: #ffffff;
-            border: solid 2px #000000;
-            color: #000000;
+            background-color: #fff;
+            border: solid 2px #000;
+            color: #000;
         }
 
         .buttongroup .button03:hover {
-            background-color: #333333;
-            border: solid 2px #333333;
-            color: #ffffff;
+            background-color: #333;
+            border-color: #333;
+            color: #fff;
         }
 
         footer {
@@ -140,7 +149,7 @@
 </head>
 <body>
     <div class="header__flex">
-        <a href="index.html"><img src="アイコン用.svg" width="40px" height="40px" alt="ロゴアイコン"></a>
+        <a href="index.html"><img src="アイコン用.svg" width="40" height="40" alt="ロゴアイコン"></a>
         <nav>
             <ul>
                 <li><a href="index.html">ホーム</a></li>
@@ -150,9 +159,11 @@
             </ul>
         </nav>
     </div>
+
     <div class="Logo-text">
         <p><span class="font-txt">ScProject</span></p>
     </div>
+
     <div class="buttongroup">
         <a href="https://scratch.mit.edu/users/ScProject-s/" target="_blank" rel="noopener noreferrer" class="button02">Scratchで見る</a>
         <a href="about.html" class="button03">ScProjectについて</a>
