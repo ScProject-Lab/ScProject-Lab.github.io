@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ScProject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            background: white;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+            color: #000;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header__flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            border-bottom: 0.5px solid #9e9e9e;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 65px;
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 1000;
+        }
+
+        .header__flex ul {
+            display: flex;
+        }
+
+        .header__flex ul li {
+            margin-left: 20px;
+        }
+
+        h1 {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            text-align: center;
+            padding: 116px 28px 53px;
+        }
+
+        h2 {
+            font-size: 30px;
+            padding-left: 20%;
+            margin: 50px 0;
+        }
+
+        h3 {
+            padding-left: 20%;
+            font-size: 17px;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 17px;
+            margin: 20px 10% 40px 20%;
+        }
+
+        .contents {
+            padding: 60px;
+            width: 100%;
+            overflow: auto;
+        }
+
+        .buttongroup {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button02, .button03 {
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-size: 1em;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button02 {
+            background-color: #000;
+            border: 2px solid #000;
+            color: #fff;
+        }
+
+        .button02:hover {
+            background-color: #333;
+        }
+
+        .button03 {
+            background-color: #fff;
+            border: 2px solid #000;
+            color: #000;
+        }
+
+        .button03:hover {
+            background-color: #333;
+            border-color: #333;
+            color: #fff;
+        }
+
+        footer {
+            width: 100%;
+            height: 120px;
+            padding: 30px 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .footer-text {
+            color: #000;
+        }
+
+        hr {
+            border: none;
+            border-top: 0.5px solid #9e9e9e;
+            width: 60%;
+            margin: 50px auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            h2, h3, p {
+                padding-left: 10%;
+                margin-right: 10%;
+            }
+
+            h1 {
+                font-size: 8vw;
+            }
+
+            .contents {
+                padding: 20px;
+            }
+
+            hr {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header__flex">
+        <a href="index.html"><img src="アイコン用.svg" width="40" height="40" alt="ロゴアイコン"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">私について</a></li>
+                <li><a href="request.html">リクエスト</a></li>
+                <li><a href="blog.html">記事</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <h1>ScProject</h1>
+        <hr>
+
+        <div class="contents">
+            <h2>プロフィール</h2>
+            <h3>名前</h3>
+            <p>ScProject-s<br>Scratchの「Sc」とProjectを組み合わせようとしたが、すでに使われていたので-sを追加。</p>
+
+            <h3>年齢</h3>
+            <p>13歳 中学2年生</p>
+
+            <h3>好きな分野</h3>
+            <p>プログラミング・音楽・数学</p>
+
+            <h3>性格</h3>
+            <p>こだわりが強く、何かにハマると熱中しますが、すぐ燃え尽きます。</p>
+
+            <h3>夢</h3>
+            <p>将来はWebやアプリのプログラマーになりたい。AIの進化に少し不安。</p>
+
+            <h3>ひとこと</h3>
+            <p>もっとハイスペックPCが欲しい...</p>
+
+            <hr>
+
+            <h2>機材</h2>
+            <h3>PC</h3>
+            <p>VersaPro</p>
+
+            <h3>スマホ</h3>
+            <p>Samsung Galaxy S24 FE<br>Redmi 12 5G</p>
+
+            <hr>
+
+            <h2>このページは</h2>
+            <p>Googleサイトから移行し、Webデザインの勉強を兼ねて制作中。これからも改良予定。</p>
+
+            <hr>
+
+            <h2>使っているツール</h2>
+            <h3>OS</h3>
+            <p>Windows 11</p>
+
+            <h3>コードエディター</h3>
+            <p>Visual Studio Code</p>
+
+            <h3>ブラウザ</h3>
+            <p>Google Chrome</p>
+
+            <h3>音編集</h3>
+            <p>Domino<br>Audacity</p>
+
+            <h3>クラウドストレージ</h3>
+            <p>Google Drive</p>
+        </div>
+
+        <hr style="width: 100%;">
+
+        <footer>
+            <p class="footer-text">© ScProject</p>
+        </footer>
+    </main>
+</body>
+</html>
